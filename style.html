@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بوابة فضاء متمدرس</title>
+    <style>
+        /* إعدادات الصفحة العامة والخلفية */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4edd2;
+            /* خلفية بملمس ورقي خفيف تحاكي الصورة الأصلية */
+            background-image: radial-gradient(rgba(0,0,0,0.03) 1px, transparent 0), linear-gradient(to bottom, #f7f2dc, #eae1bd);
+            background-size: 4px 4px, 100% 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            overflow-x: hidden;
+        }
+
+        /* الهيدر أو الجزء العلوي (الشعار والنصوص) */
+        header {
+            text-align: center;
+            margin-top: 20px;
+            color: #1a365d;
+        }
+
+        .logo-placeholder {
+            font-size: 0.9rem;
+            font-weight: bold;
+            line-height: 1.6;
+        }
+
+        .logo-title-ar {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        /* الحاوية الرئيسية للبطاقات وسط الشاشة */
+        .main-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+        /* تصميم البطاقة المشتركة */
+        .card {
+            width: 320px;
+            height: 220px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* الجزء السفلي الأبيض لكل بطاقة */
+        .card-footer {
+            width: 100%;
+            background-color: #eef2f7;
+            text-align: center;
+            padding: 15px 0;
+            color: #0b2545;
+            font-weight: bold;
+            font-size: 0.95rem;
+            border-bottom: 2px solid #cbd5e1;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            z-index: 2;
+        }
+
+        /* الدائرة التي تحتوي على الصورة وسط البطاقة */
+        .circle-img-container {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #ffffff;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -15%);
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            z-index: 3;
+            background-color: #fff;
+        }
+
+        .circle-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* خصائص البطاقة اليمنى (فضاء التلاميذ - برتقالي) */
+        .card-students {
+            background-color: #ff8c00;
+        }
+
+        .card-students .circle-img-container {
+            border-color: #a5c4e7; /* إطار أزرق فاتح حول الصورة تحاكي الصورة الأصلية */
+        }
+
+        /* خصائص البطاقة اليسرى (فضاء أولياء الأمور - أزرق رمادي) */
+        .card-parents {
+            background-color: #8fa3b4;
+        }
+
+        .card-parents .circle-img-container {
+            border-color: #a5c4e7;
+        }
+
+        /* تذييل الصفحة (الفوتر) */
+        footer {
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.4);
+            border-top: 1px solid rgba(0,0,0,0.08);
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 40px;
+            box-sizing: border-box;
+            font-size: 0.85rem;
+            color: #555;
+        }
+
+        /* متجاوب مع الشاشات الصغيرة والهواتف */
+        @media (max-width: 768px) {
+            .main-container {
+                gap: 60px;
+                margin-top: 40px;
+            }
+            body {
+                height: auto;
+            }
+            footer {
+                flex-direction: column;
+                align-items: center;
+                gap: 5px;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- الجزء العلوي للوزارة -->
+    <header>
+        <div class="logo-placeholder">
+            المملكة المغربية<br>
+            وزارة التربية الوطنية<br>
+            والتعليم الأولي والرياضة
+        </div>
+        <div class="logo-title-ar">ⵜⴰⴳⵍⴷⵉⵜ ⵏ ⵍⵎⵖⵔⵉⴱ | ⵜⴰⵙⵎⵉⵔⵉⵜ ⵏ ⵓⵙⴳⵎⵉ</div>
+    </header>
+
+    <!-- البطاقات الرئيسية -->
+    <main class="main-container">
+        
+        <!-- بطاقة التلاميذ (البرتقالية) -->
+        <a href="#" class="card card-students">
+            <div class="circle-img-container">
+                <!-- صورة افتراضية تعبر عن التلاميذ والدراسة -->
+                <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?w=400" alt="التلاميذ">
+            </div>
+            <div class="card-footer">
+                الفضاء الخاص بالتلميذات والتلاميذ
+            </div>
+        </a>
+
+        <!-- بطاقة أمهات وآباء وأولياء التلاميذ (الزرقاء) -->
+        <a href="#" class="card card-parents">
+            <div class="circle-img-container">
+                <!-- صورة افتراضية تعبر عن الأطفال والأسرة -->
+                <img src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=400" alt="أولياء الأمور">
+            </div>
+            <div class="card-footer">
+                الفضاء الخاص بأمهات وآباء وأولياء التلميذات والتلاميذ
+            </div>
+        </a>
+
+    </main>
+
+    <!-- الفوتر السفلي -->
+    <footer>
+        <div>Version 2.0</div>
+        <div>Copyright © 2018</div>
+    </footer>
+
+</body>
+</html>
