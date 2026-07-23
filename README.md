@@ -3,7 +3,7 @@
 A lightweight, pixel-perfect, and fully responsive front-end clone of the official Moroccan educational platform **Moutamadris (Massar)** login portal interface. Developed using semantic HTML5 and clean CSS3 without any external heavy frameworks.
 
 ## 🚀 Live Demo
-You can view the live project here: https://sidsimo.github.io/principal-massar/style
+You can view the live project here: https://sidsimo.github.io/Moutamadris-Portal-Clone/style
 
 ---
 
