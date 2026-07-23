@@ -1,4 +1,4 @@
-# 🏛️ Moutamadris Portal Clone (بوابة فضاء متمدرس)
+<img width="1794" height="906" alt="Screenshot_23-7-2026_234842_sidsimo github io" src="https://github.com/user-attachments/assets/f3a7a939-8a08-490c-9f55-dffadfac5a85" /># 🏛️ Moutamadris Portal Clone (بوابة فضاء متمدرس)
 
 A lightweight, pixel-perfect, and fully responsive front-end clone of the official Moroccan educational platform **Moutamadris (Massar)** login portal interface. Developed using semantic HTML5 and clean CSS3 without any external heavy frameworks.
 
@@ -20,4 +20,5 @@ You can view the live project here: https://sidsimo.github.io/principal-massar/s
 * **CSS3:** Custom layouts, flexbox positioning, media queries, and radial-gradient styling for texturing.
   
 ## 📸 Preview
-![Moutamadris Clone Preview](https://raw.githubusercontent.com/sidsimo/principal-massar/main/Screenshot_23-7-2026_234842_sidsimo.github.io.jpeg)
+![Moutamadris Clone Preview] <img width="1794" height="906" alt="Screenshot_23-7-2026_234842_sidsimo github io" src="https://github.com/user-attachments/assets/2597e603-c303-43a4-853a-d85dcac22291" />
+
